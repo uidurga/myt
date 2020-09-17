@@ -1,0 +1,220 @@
+<app-header></app-header>
+<section class="welcome">
+    <div class="wleft">
+     
+       <app-search></app-search>
+       <div class="row">
+            <div class="col-12 col-md-12 text-center">
+                <img width="80%" src="assets/images/bg1.png">
+            </div>
+        </div>
+    </div>
+    <div class="wright">
+      <div class="row">
+        <div class="signupbox">
+          <div class="col-md-12">
+            <h4 class="mt-2 mb-4">Creating a New Account</h4>
+<form role="form">
+                  <div class="form-group float-label-control">
+                      <input type="email" class="form-control" placeholder="Username">
+                  </div>
+                  <div class="form-group float-label-control">
+                      <input type="email" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="form-group float-label-control">
+                      <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                 
+              </form>
+
+
+
+
+          </div>
+          <div class="col-md-8 offset-2">
+            <div class="form-group text-center">
+                   <button class="btn btn-primary btn-block signupbtn mb-2"  data-toggle="modal" href='#signup'>Sign up <i class="fa fa-angle-right pull-right"></i></button>
+                   <p>Have any Account? <a href="">Sign in</a></p>
+                 </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="modal fade" id="signup">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Complete your Profile</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+          <div class="row mb-4">
+                <div class="col-md-4">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" placeholder="Middle name">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
+          <div class="row">
+            <div class="col-md-9">
+              
+              <div class="row mb-4">
+                <div class="col-md-4">
+                  <select name="" id="input" class="form-control" required="required">
+                    <option value="">Gender</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <select name="" id="input" class="form-control" required="required">
+                    <option value="">Country</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <select name="" id="input" class="form-control" required="required">
+                    <option value="">Position</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Enter University / School name">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Phone number">
+                </div>
+                
+              </div>
+              <div class="row mb-4">
+                
+                <div class="col-md-6">
+                  <small><label>Date of birth</label></small>
+                  <input class="form-control" type="date" value="" placeholder="" id="example-date-input">
+                </div>
+                <div class="col-md-6">
+                  <small><label>Upload ID</label></small>
+                   <div class="custom-file">
+      <input type="file" class="custom-file-input" id="customFile">
+      <label class="custom-file-label" for="customFile">Choose file</label>
+    </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-md-3 mt-4">
+               <div class="picture-container">
+          <div class="picture">
+              <img src="" class="picture-src" id="wizardPicturePreview" title="">
+              <input type="file" id="wizard-picture" class="">
+          </div>
+           <h6 class="">Choose Picture</h6>
+  
+      </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="modal-footer text-center flex-column">
+          <button type="button" class="btn btn-primary nxtbtn" data-toggle="modal" href='#areas'>Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="areas">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Tell us what you're intrested in</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+          <div class="row areas">
+                <div class="col-md-5ths">
+                  <a href="" class="categoryblock">
+                    <div class="img" style="background: url('assets/images/myt.jpg');"></div>
+                    <strong>Transportation</strong>
+                  </a>
+                </div>
+                <div class="col-md-5ths">
+                  <a href="" class="categoryblock">
+                    <div class="img" style="background: url('assets/images/myt.jpg');"></div>
+                    <strong>Education</strong>
+                  </a>
+                </div>
+                <div class="col-md-5ths">
+                  <a href="" class="categoryblock">
+                    <div class="img" style="background: url('assets/images/myt.jpg');"></div>
+                    <strong>Engineering</strong>
+                  </a>
+                </div>
+                <div class="col-md-5ths">
+                  <a href="" class="categoryblock">
+                    <div class="img" style="background: url('assets/images/myt.jpg');"></div>
+                    <strong>Medical</strong>
+                  </a>
+                </div>
+                <div class="col-md-5ths">
+                  <a href="" class="categoryblock">
+                    <div class="img" style="background: url('assets/images/myt.jpg');"></div>
+                    <strong>Business</strong>
+                  </a>
+                </div>
+                
+              </div>
+              <p class="text-center mb-0"><small >Pick any 10</small></p>
+        
+          
+        </div>
+        <div class="modal-footer text-center flex-column">
+          <button type="button" class="btn btn-primary nxtbtn" data-toggle="modal" href='#otp'>Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="otp">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">MYT Signup Verification</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12 mb-2">
+              <p class="text-center">Please enter OTP code sent via sms to <br>your phone number</p>
+  
+            </div>
+            <div class="col-md-12 mb-2">
+              <form id="ios">
+      <input type="number" maxlength="1" />
+      <input type="number" maxlength="1"/>
+      <input type="number" maxlength="1"/>
+      <input type="number" maxlength="1"/>
+  </form>
+  
+            </div>
+            <div class="col-md-12 mb-2">
+              <p class="text-center">Don't received OTP? <a href=""><span style="color: red;">Resend code</span></a></p>
+  
+            </div>
+                
+              </div>
+        
+          
+        </div>
+        <div class="modal-footer text-center flex-column">
+         <a href="home"> <button type="button" class="btn btn-primary nxtbtn" >Verify</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+

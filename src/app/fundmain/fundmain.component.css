@@ -1,0 +1,34 @@
+.fundmain {
+  background: #fff;
+  border-radius: 25px;
+}
+
+.fundmain .fundbox {
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.fundmain .fundbox img {
+  width: 100%;
+}
+
+.fundmain .fundbox small {
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-bottom: 0;
+  font-weight: 500;
+  color: grey;
+}
+
+.fundmain .fundbox p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.fundmain .fundbox h5 {
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #007bff;
+}
+/*# sourceMappingURL=fundmain.component.css.map */

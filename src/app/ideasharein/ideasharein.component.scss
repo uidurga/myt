@@ -1,0 +1,62 @@
+.fundmain{
+    background:#fff;
+    border-radius: 25px;
+    .fundbox{
+        text-align: center;
+        padding:25px;
+        margin-bottom: 10px;
+        .btn{
+            border-radius: 25px;
+            padding: 5px 10px;
+            margin-top: 10px;
+        }
+        img{
+            width:120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+        
+         
+        h5{
+            margin: 10px 0;
+            font-size: 17px;
+            color: #007bff;
+        }
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:14px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}

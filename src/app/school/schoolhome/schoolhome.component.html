@@ -1,0 +1,233 @@
+<section class="eform">
+    <div class="container">
+        
+
+        <div class="row">
+            <div class="col-12  m-b-1">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label " for="inlineCheckbox1"> International</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">National</label>
+                  </div>
+                  
+            </div>
+            <div class="col-12" style="display: none;">
+                <form>
+                    
+                    <div class="form-group">
+                        <label for="">Select exam</label>
+                        
+
+  <select  class="selectpicker dropdown mt-4 ml-3" id="type" data-live-search="true">
+    <option *ngFor="let test of testModel" [value]="test.id">{{test.description}}</option>
+ </select>
+                        
+                    </div>
+                    
+                    <div class="form-row">
+                     
+                     
+                      <div class="form-group col-md-2">
+                        <label for="inputZip">Reading</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip">Speaking</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip">Listening</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip">Writing</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputZip">Overall score</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Go</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="wrapper" style="display: none;">
+
+              
+                <section class="inner_search">
+                    <div class="container">
+                   
+                        <form>
+                        <div class="row m-t-2 asr">
+                        <div class="col-md-3">
+                                           <div class="form-group">
+                                              <select class="c-select form-control">
+                    <option selected>Program levels</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                                           </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                           <div class="form-group">
+                                              <select class="c-select form-control">
+                    <option selected>Countries</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                                           </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                           <div class="form-group">
+                                              <select class="c-select form-control">
+                    <option selected>States</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                                           </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                           <div class="form-group">
+                                              <select class="c-select form-control">
+                    <option selected>Option</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                                           </div>
+                                        </div>
+                                       
+                        </div>
+                        
+                        <div class="row">
+                        <div class="col-md-12">
+                        
+                     
+                        <button class="btn btn-primary btn-theme-round btn-lg">Search by filter</button>
+                        <a class="p-l-2 adf" data-toggle="modal" href='#advance'><i class="fa fa-filter"></i> Advance search</a>
+                   
+                    </div>
+                    
+                        </div>
+                        </form>
+                    </div>
+                </section>
+                <div class="modal fade" id="advance">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">Advanced search filter</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                <div class="col-md-12">
+                                           <div class="form-group"><label>School types</label>
+                                              <select class="selectpicker" data-title="" data-width="100%" data-style="btn-default" data-live-search="true">
+                                              <option selected>University</option>
+                                              <option>College</option>
+                                              <option>English Institute</option>
+                                              <option>Others</option>
+                                              </select>
+                                             
+                                           </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                        <label>Tution fee</label>
+                                        <div class="range">
+                            <input type="range" name="range" min="10000" max="100000" value="20000" onchange="range.value=value">
+                            <output id="range">10000</output>
+                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                        <label>Application fee</label>
+                                        <div class="range">
+                            <input type="range" name="range" min="100" max="5000" value="500" onchange="range1.value=value">
+                            <output id="range1">500</output>
+                          </div>
+                                        </div>
+                                        </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Clear</button>
+                                <button type="button" class="btn btn-primary">Go</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+<section class="section2">
+    <div class="container">
+
+        
+        
+        <div class="row r-m-5 stick_row">
+                
+ <div class="col-md-12 c-p-5">
+  <h4 class="title-small text-muted"><i class="fa fa-home"></i> Colleges ( 23 Found)</h4>
+                       
+                           
+                            <div class="list-block p-a-3 bs_1">
+
+                            <div class="row">
+                                <div class="col-md-9">
+                                                   <div class="media">
+                                <a class="pull-left p-r-3" href="hospital_view.php">
+                                   
+                                    <div class="img" style="background: url(images/clinic.jpg);"></div>
+                                    <div class="starating m-t-1" data-count="2">
+                  <i class="fa fa-star"></i> 
+                  <i class="fa fa-star"></i> 
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  </div>
+                  <small class="text-muted">(20 Raters)</small>
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="hospital_view.php">Course name <small>( University Name )</small></a></h4>
+                                   
+
+
+    <ul class="doctor_details">
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis adipisci labore vel atque minus, rem assumenda quisquam id iure quam sit ea saepe quia doloremque quibusdam dolorum distinctio tempore ipsum!</li>
+
+   
+    </ul>
+
+
+
+
+                                </div>
+                            </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <a data-toggle="modal" href="#bookappointment" class="btn btn-primary text-uppercase p-y-1 p-x-3">Apply</a>
+
+                                </div>
+                            </div>
+
+             
+                        
+
+                                </div>
+                            </div>
+
+                
+
+
+                        </div>

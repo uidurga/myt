@@ -1,0 +1,8 @@
+<p>user works!</p>
+<form class="login-form" [formGroup]="formGroup" (ngSubmit)="loginProcess()">
+   
+      <input  placeholder="username" formControlName="EmailAddress">
+        <input type="password" placeholder="password" formControlName="password">
+  <button type="submit">login</button>
+  </form>
+  

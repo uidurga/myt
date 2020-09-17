@@ -1,0 +1,60 @@
+
+.welcome {
+    width: 100%;
+    background: #C5E2F2;
+    display: inline-flex; }
+    .welcome .wleft {
+      width: 50%;
+      padding: 30px 9%; }
+      .welcome .wleft .mlist li {
+        display: inline-block;
+        padding-right: 30px;
+        color: #707070;
+        font-size: 17px;
+        margin-bottom: 10px; }
+        .welcome .wleft .mlist li a {
+          color: #707070;
+          font-size: 17px; }
+      .welcome .wleft h1 {
+        color: #0077B8;
+        font-size: 30px;
+        font-weight: 900;
+        text-transform: uppercase; }
+      .welcome .wleft p {
+        color: #0077B8;
+        line-height: 20px;
+        font-size: 12px; }
+      .welcome .wleft .input-group {
+        margin-bottom: 0; }
+        .welcome .wleft .input-group .input-group-append {
+          background: #fff;
+          border-radius: 0px 25px 25px 0px; }
+          .welcome .wleft .input-group .input-group-append .input-group-text {
+            border-radius: 0px 25px 25px 25px;
+            background: #0077B8;
+            color: #fff; }
+        .welcome .wleft .input-group .form-control {
+          border-radius: 25px 0px 0px 25px;
+          font-size: 14px;
+          border: 0;
+          height: 50px; }
+          .welcome .wleft .input-group .form-control:focus {
+            border-color: none;
+            box-shadow: none; }
+      .welcome .wleft .nav-tabs {
+        border: 0; }
+        .welcome .wleft .nav-tabs .nav-link.active {
+          background: none; }
+        .welcome .wleft .nav-tabs .nav-link {
+          padding: 0 10px;
+          border: none; }
+          .welcome .wleft .nav-tabs .nav-link:nth-child(1) {
+            padding-left: 0; }
+          .welcome .wleft .nav-tabs .nav-link:hover, .welcome .wleft .nav-tabs .nav-link:focus {
+            border-radius: 0;
+            border: none; }
+    .welcome .wright {
+      width: 50%; }
+      .welcome .wright .jm img {
+        width: 100%; }
+  

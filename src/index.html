@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MYT</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="mat-typography">
+  <app-root></app-root>
+</body>
+
+
+<script type="text/javascript">
+	// Add the following code if you want the name of the file appear on select
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+
+$(document).ready(function(){
+// Prepare the preview for profile picture
+    $("#wizard-picture").change(function(){
+        readURL(this);
+    });
+});
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#wizardPicturePreview').attr('src', e.target.result).fadeIn('slow');
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+};
+</script>
+<script type="text/javascript">
+	$("#areas").click(function(){
+  $('#signup').modal('hide');
+  $('#areas').modal('show');
+});
+$("#otp").click(function(){
+	$('#signup').modal('hide');
+  $('#areas').modal('hide');
+});
+	// Disable Mouse scrolling
+$('input[type=number]').on('mousewheel',function(e){ $(this).blur(); });
+// Disable keyboard scrolling
+$('input[type=number]').on('keydown',function(e) {
+    var key = e.charCode || e.keyCode;
+    // Disable Up and Down Arrows on Keyboard
+    if(key == 38 || key == 40 ) {
+	e.preventDefault();
+    } else {
+	return;
+    }
+});
+$('.my-select').selectpicker();
+$('select').selectpicker();
+$('.selectpicker').selectpicker();
+</script>
+</html>

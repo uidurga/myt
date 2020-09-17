@@ -1,0 +1,72 @@
+.nav-tabs {
+    border: 0; }
+    .nav-tabs .nav-link.active {
+      background: #0077B8;
+    color: #fff;
+  border-radius: 25px; }
+    .nav-tabs .nav-link {
+      padding: 0 10px;
+      border: none; }
+      .nav-tabs .nav-link:nth-child(1) {
+        padding-left: 0; }
+      .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+        border-radius: 25px;
+        border: none; }
+        .nav-tabs .nav-item {
+          width: 25%;
+          text-align: center;
+      }
+        .mainpost {
+            background: #fff;
+            border-radius: 25px;
+            padding: 10px;
+          margin-bottom: 10px; }
+            .mainpost .hpost i {
+              line-height: 40px;
+              color: #0077B8; }
+            .mainpost .hpost .himg {
+              display: inline-flex; }
+              .mainpost .hpost .himg p {
+                margin: 0;
+                font-size: 12px;
+                line-height: 40px; }
+                .mainpost .hpost .himg p a {
+                  color: #0077B8; }
+              .mainpost .hpost .himg img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 5px; }
+                .mainpost .hbody{
+                  margin-bottom: 5px;
+                }
+            .mainpost .hbody img {
+              width: 100%; }
+            .mainpost .hbody p {
+              margin: 0;
+              font-size: 12px; }
+            .mainpost .hfoot .hlike ul {
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              display: inline-flex;
+              margin-top: 5px; }
+              .mainpost .hfoot .hlike ul li {
+                list-style: none;
+                text-align: center;
+              margin-right: 20px;}
+                .mainpost .hfoot .hlike ul li a {
+                  color: #0077B8;
+                  font-size: 12px; }
+            .mainpost .hfoot .htop p {
+              margin: 0;
+              line-height: 20px;
+              font-size: 12px; }
+              .mainpost .hfoot .htop p small {
+                line-height: 20px;
+                font-size: 10px; }
+          .headb{
+            color: #0077B8;
+            font-weight: 600;
+            font-size: 12px;
+          }
